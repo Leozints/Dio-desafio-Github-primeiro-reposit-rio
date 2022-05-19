@@ -107,3 +107,47 @@ perda de um frame ou mais de uma informação.
 ####Switch
 *distribui internet para um ou mais dispositivos de uma rede
 *criado para ser "inteligente"
+
+####SMS
+*quanto custa para uma operadora móvel enviar um sms? nada
+*o celular troca alguns bits com as torres de comunicação "pacotes"
+
+####MMS
+*transmissão de mensagens multimídia (áudio, vídeo) por meio de uma espécie de conecção de dados primitiva.
+
+####conexões móveis
+*1g(analógico) 10kbps
+*2g(digital) 97kbps
+*grps/2,5g32/80kbps -dados +voz
+*edge/2,75g 128-236kbps
+*3g (7mbps) 4g(22,1mbps) 5g(10gbps)
+
+####wi-fi
+*IEEE 802.11: 2,4GHz, 2Mbps
+*IEEE 802.11a: 5GHz, 54Mbps
+*IEEE 802.11b: 2,4GHz, 11Mbps (diminuição de interferência)
+*IEEE 802.11g: 2,4GHz, 54Mbps
+*IEEE 802.11n: 2,4GHz/5GHz, 150-600Mbps
+
+####Segurança
+*WEP: chaves de 64 bits e de 128 bits
+*WPA: chave trocada periodicamente
+*WPA2 (AES) (802.lli)
+  *+segurança
+  *+processamento
+
+####Dispositivos na rede
+*impressora 
+*scanner
+*chromecast
+
+####bluetooth
+*conexão ponto a ponto
+*3 classes oje em dia (1-100mW / 2-2,5mW/ 3-1mW)
+
+####Browser
+*como você faria para acessar a internet sem um Browser
+*claro, existem muitas formas mas para ver um site é preciso um programa que interprete as linguagens de programação (lp) e as transforme em algo compreensível por um humano
+*sabe identificar várias LP, linguagens de marcação e conteúdo multimedia
+*hoje, os browsers fazem muito mais que isso, existem plug-ins, ou add-ons, que ajudam na navegação
+*chache e cookies
