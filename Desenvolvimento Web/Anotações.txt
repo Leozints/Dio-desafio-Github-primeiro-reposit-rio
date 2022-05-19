@@ -151,3 +151,58 @@ perda de um frame ou mais de uma informação.
 *sabe identificar várias LP, linguagens de marcação e conteúdo multimedia
 *hoje, os browsers fazem muito mais que isso, existem plug-ins, ou add-ons, que ajudam na navegação
 *chache e cookies
+
+####página estática vs página dinâmica
+*página estática é umapágina com apenas uma unica imagem
+*página dinâmica você pode interagir com todo o site, abrir fotos, videos, efetuar loggin, etc...
+
+####site
+*página na internet
+*diversos propósitos
+*podem ser feitas em diversas LP
+*d/xhtml caindo em desuso
+
+####aplicativo
+*software que é executado no navegador
+*um aplicativo de celular muitas vezes nada mais é do que uma espécie de navegador
+*jáquase nao existe diferença entre site e aplicativo, sendo que o primeiro esta caindo em desuso
+*outra diferença terminológica que está sumindo é entre programa/software e aplicativo
+
+####e-commerce
+*"e", assim como "email" significa eletronic
+*comércio eletronico
+*sistema de compra e venda como sistema de pagamento
+*o sistema de pagamento pode ser exterior ao site
+*picpay, boleto, pagseguro, mercado pago
+
+####web-server
+*existem dois tipos: estáticos e dinâmicos
+*estático é um sevidor fisico onde sâo armazenados arquivos, softwares e/ou banco de dados
+*o dinâmico se refere ao software que estao presentes no interior do servidor físico
+
+####web-server dinâmico
+*arquivos (file server)
+*aplicações (application server)
+*banco de dados (database)
+*tudo junto e misturado
+*umsite, ou aplicativo, precisa estar hospedado num servidor para poder ser acessado
+*os dados de um site precisam estar em um servidor
+*o banco de dados de um site ou aplicativo precisa estar em um servidor
+
+####web-service
+*interface dispinível para fazer requisições e consultas em bancos de dados inacessíveis (correios, governo)
+
+####stacks
+*pilhas de tecnologia
+*conjunto de softwares necessários e suficientes para executar um aplicatico/programa
+*linguagens de programação
+*ambientes e ferramentas de interação com o app/sw
+*capacidade e limitação de perfomace
+*pontos fortes e fracos do app/sw
+*######importância
+  *os líderes de projeto precisam das informações das equipes de desenvolvimento
+  *os desenvolvedores precisam saber as limitações e capacidades das ferramentas e ambientes que têm disponíveis
+  *sistemas, bancos de dados, linguaguens de programação, protocolos de comunicação
+  *estratégias de negócio
+  *maturidade
+  *contratações, planos de mitigações de risco, aumento da capacidade, uso dos dados
