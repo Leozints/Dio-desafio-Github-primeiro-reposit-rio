@@ -1,0 +1,87 @@
+####Termos chave:
+*download
+*navegador
+*banda larga
+*cache
+*crack
+*email
+*emoticons/emogi
+*gif/jpg
+*host
+*html
+*jttp
+*icone
+*link
+*login/logon
+*logout/logoff
+*mp3
+*multimidia
+*nick
+*online/offline
+*pixel
+*spam
+*url
+*virus
+*backup
+*blog
+*(cyber)bullying
+*3g/4g/5g
+*cookies
+*firewall
+*hacker
+*ip
+*Keylogger (um virus perigoso que lê tudo que você digita)
+*phishing (intenção de roubar dados)
+*click bait
+*fake news
+*podcast
+*vlog
+*pop-up
+*youtuber
+
+####Latência
+latência é o tempo que um dado leva para sair de um ponto de origem para um ponto de destino.
+
+####Perda de Pacote
+perda de um frame ou mais de uma informação.
+
+####Backbone
+*é a "espinha da rede
+*espinha dorsal
+*costelas
+*poucas
+*espalhadas pelo mundo
+
+####Provedor de acesso
+*normalmente empresas telefônicas
+*fornecem o acesso ao backbone/internet
+*dial-up
+*adsl (banda larga)
+*Fibra ótica
+*rádio
+*satélite
+*móvel
+*p2p (peer to peer)
+
+####TCP/IP
+*Protocolos de comunicação entre computadores em rede
+*transmission control protocol - protocolo de controle de transmissão
+*internet protocol - protocolo de internet
+*modelo de camadas
+*######4 camadas
+ *física (placa de rede)
+ *rede (ip)
+ *transporte (tcp, udp)
+ *aplicação (ftp, smtp, http)
+
+####udp 
+*rápido
+*não confiável
+*carro do ovo
+*livestream
+
+####tcp
+*voltado à conexão
+*handshake
+*integridade, ordem dos dados 
+*aplicativo de mensagens de texto
