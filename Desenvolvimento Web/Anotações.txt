@@ -206,3 +206,83 @@ perda de um frame ou mais de uma informação.
   *estratégias de negócio
   *maturidade
   *contratações, planos de mitigações de risco, aumento da capacidade, uso dos dados
+
+####Front-end
+*"parte da frente"
+*site, software, aplicativo, web service
+*interface, ui, ux
+*lógica de programação, html, css, jquery/JS/ajax, php,bootstrap/outros frameworks
+
+####Back-end
+*"parte de trás"
+*servidores, banco de dados
+*"meio de campo" entre interface e banco de dados, regras de negócios, validações
+*mysql, oracle, protocolos de comunicação, php, java, node.js
+
+####Full-stack
+*profissional que sabe trabalhar em todas as camadas das tecnologias de desenvolvimento/execução de um app/sw
+
+####principais Linguagens
+*html
+*css
+*javascript(jquery, ajax, diversas libs)
+*php
+*.net
+*asp
+*java
+*ruby (on rails)
+*pyton
+*perl
+*c/c++/C#
+
+####termos comuns
+*404
+*algoritmo
+*ALT
+*API
+*aplicação
+*back-end
+*biblioteca/dll
+*bootstrap
+*breakpoints
+*browser/navegador
+*bug
+*cache
+*código
+*controle de versão
+*cookies
+*debug
+*deploy
+*design adaptativo/responsivo
+*dns
+*documentação
+*domínio
+*dpi
+*editor de texto
+*estrutura de dados
+*favicon
+*fontes
+*framework
+*front-end
+*ftp
+*full-stack
+*github/svn/cvs
+*http(s)
+*ip
+*linguagem
+*meta tags
+*métodoágil
+*mobile
+*mvc
+*mvp
+*mysql
+*pixel
+*resolução
+*servidor
+*sistema operacional/so
+*solução
+*ssl
+*ui
+*ux
+*versão
+*wysiwyg
