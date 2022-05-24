@@ -1,0 +1,13 @@
+####java script
+*interpretada
+*baseada em protótipos
+*multiparadiga
+*comumente utilizada em aplicações web client-side
+*segue o padrão ECMAScript
+*######aplicações
+  *web
+  *mobile
+  *smartwatches
+  *games
+  *internet of things
+  *APIs
