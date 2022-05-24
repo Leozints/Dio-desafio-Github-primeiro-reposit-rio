@@ -11,3 +11,39 @@
   *games
   *internet of things
   *APIs
+
+####comentários
+*utilizasse // para comentário de linha
+*utilizasse  /* */ com o conteúdo que quiser comentar dentro 
+*ctlr + / cria um comentário no que for selecionado
+
+####variável e constante
+*variável é o valor que se altera na função
+*constante é ovalor fixo na função
+
+####função
+*declarada com function (função escolhida por exemplo soma)(a, b) { }
+*return usado quando precisa reutilizar aquele valor em outra função
+*console.log usado para só dar o valor
+
+####console numa página da web
+*ctrl + shift + i abre o console no chrome
+
+####comando teste
+*function returnEvenValues(array) {
+    let evenNums = []
+    for(let i = 0; i < array.length; i++) {
+       if(array[i] % 2 ===0) {
+           evenNums.push(array[i]);
+       }else {
+           console.log(`${array[i]} não é par`)
+       }
+    }
+    console.log('os números pares são:', evenNums);   
+}
+
+let array = [1, 2, 4, 5, 7, 8, 3011, 9998]
+
+returnEvenValues(array);
+
+####
