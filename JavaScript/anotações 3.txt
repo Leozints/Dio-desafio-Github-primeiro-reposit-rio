@@ -46,4 +46,15 @@ let array = [1, 2, 4, 5, 7, 8, 3011, 9998]
 
 returnEvenValues(array);
 
-####
+####estrutura 
+*projeto separado em arquivos e pastas
+*pasta assets(ferramentas que tem, imagem, arquivos de css, arquivos de js)
+*index.html, scripts.js e style.css são os doc base 
+
+####inserir um arquivo Js e CSS numa página html
+*<link rel="stylesheet" href="assets/css/styles.css" />
+*<script src="assets/js/scripts.js"></script>
+
+####DOM
+*document object model
+*estrutura de elementos dentro da janela
