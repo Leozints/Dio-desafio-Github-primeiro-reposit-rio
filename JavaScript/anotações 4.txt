@@ -1,0 +1,213 @@
+####JavaScript
+*é uma linguagem de programação de alto nível, que integra o desenvolvimento de apps e páginas web
+*é uma das linguagens de programação mais usadas no mundo do desenvolvimento
+*antes chamada mocha, passando para livescript, e com a fala do java foi mudado o nome para javascript
+
+####variáveis e seus valores
+*tipagem funciona como uma regra de uso dedados, quanto mais forte for a tipagem, mais obrigatório é a declaração do tipo de dado
+*a tipagem em JavaScript é fraca, a declaraçãodos dados acontece de modo dinâmico
+*ao criarmos uma variável com o valor entre aspas ("valor1") JavaScriptjá converte o dado para o tipo string ex: var numero = 1 //o JavaScript já converte o valor 1 para o tipo number
+
+####declaração de variáveis
+*as variáveis em javascriptpodem guardar tipos de dados que chamamos de tipos primitivos
+*variáveis podem guardar valores do tipo: boolean, null, undefined, number, string, array, object, function
+*declara com VAR, LET, CONST
+*var é criado em escopo global
+*let criado em escopo local
+*const é criado em escopo local, somente leitura, o valor inicial é obrigatório e nao pode ser alterado
+
+####boolean
+*verdadeiro ou falso
+*var VouF = false
+
+####number
+*var numero = 1
+
+####string
+*nome
+*var nome = 'diana'
+
+####variáveis
+*caixa que guarda valores
+
+####regra do uso de variáveis
+*iniciar com letras, underscore_ ou sifrão $
+*não iniciar com número
+*não usar espaços (usar ocamelCase ou _)
+*nao usar regras reservadas (como var function)
+*declarar variáveisno topo do bloco de código
+
+####atribuição, comparação e comparação idêntica
+*o sinal de igualdade "="em JavaScript, significa atribuição.
+*para fazermos uma comparação de valores usasse "=="´por exemplo var comparação = 1 == 1 (true)
+*para fazer uma comparação idêntica de valores e tipos usamos "===" por exemplo var ComparaçãoIdentica= '2' === 2 (false pois o primeiro é uma string e o segundo um number)
+
+####operadores aritméticos
+*adição +
+*subtração -
+*multiplicação *
+*divisão real /
+*divisão interira %
+*potenciação **
+
+####operadores relacionais
+*maior que >
+*menor que <
+*maior ou igual a >=
+*menor ou igual a <=
+
+####operadores lógicos
+*&& - "e"- considera que todos os valores sejam true
+*|| - "ou" - considera que qualquer valor seja true
+*! -"não" - inverte o valor de true para false ou vice-versa
+
+####vetores
+*arrays são tipos de listas, ou matriz de variáveis, onde cada variável possui um índice. os valores podem ser de vários tipos.
+*é uma caixa com várias caixas dentro e cada uma contendo algum valor
+*ex: let array = ['string', 1, true...]
+*o array deve ser declarado entre colchetes"{}" e podem guardar qualquer valor dentro de seus índices: inclusive outros arrays
+*ex: let array = ['string', 1, true, false, ['array1'], ['array2']...]
+o índice só é acessado por um número inteiro, onde 0 é o primeiro índice. Cada índice é separado por vírgula
+
+####manipulando arrays
+*forEach() – itera um array;
+*push() – add item no final do array;
+*pop() – remove item no final do array;
+*shift() – remove item no início do array;
+*unshift() – add item no início do array;
+*indexOf() – retorna o índice de um valor;
+*splice() – remove ou substitui um item pelo índice;
+*slice() – retorna uma parte de um array existente;
+
+####objetos
+*Dados que possuem propriedades e valores que definem suas características. Deve ser declarado entre chaves “{}”.
+*Ex.: imagine uma xícara azul. Ela tem cor, pode ter vários tamanhos e funções(quero cafééé). Pode ser declarada assim:
+var xicara = {cor: ‘azul’, tamanho: ‘p’, funcao: tomarCafe()}
+
+####manipulando objetos
+*As propriedades de ojbetos podem ser atribuídas à variáveis,facilitando a manipulação do objeto. Chamamos isso de desestruturação.
+*Ex.: var xicara = {cor: ‘azul’, tamanho: ‘p’, funcao: tomarCafe()}
+      var cor = xicara.cor;
+      var tamanho = xicara.tamanho;
+      var funcao = tomarCafe();
+
+####estruturas condicionais
+*São instruções para realizar determinadas tarefas a partir de uma condição, seja de decisão ou repetição;
+*Ex.: Um jogo precisa mudar o placar toda vez que um jogador marca pontuação;
+
+####IF
+*Podemos usar as palavras reservadas “if” para estabelecer uma condição
+*Ex.: var jogador1 = 0;
+      var jogador2 = 0;
+
+      if (jogador1 > 0) {
+         console.log(‘jogador1 marcou ponto’);
+      }
+// como ler: se o jogador1 tiver valor maior que 0
+ele marcou ponto.
+
+####ELSE
+*No caso de a condição não ser atendida podemos usar o “else” :
+*Ex.: var jogador1 = 1;
+      var jogador2 = 0;
+
+      if (jogador1 > 0) {
+         console.log(‘jogador1 marcou ponto’);
+      } else {
+       console.log(‘ninguem marcou ponto');
+      }
+
+####ELSE IF
+*Caso haja mais de uma condição usamos o “else if“.
+*Ex.: var jogador1 = 1;
+var jogador2 = 0;
+
+if (jogador1 > 0) {
+console.log(‘jogador1 marcou ponto’);
+} else if (jogador2 > 0) {
+console.log(‘jogador2 marcou ponto’);
+} else {
+console.log(‘ninguém marcou ponto);
+
+####NINHO DE IF
+*Podemos também usar o “if” dentro de um outro “if”, chamamos isso de aninhamento de if’s ou ninho de if’s.
+*Ex.: if (jogador1 = -1) {
+         if (jogador1 > 0) {
+            console.log(‘jogador 1 marcou ponto’);
+         } else {
+            console.log(‘ninguém marcou ponto’);
+          }
+         } else {
+           console.log(‘jogador inválido’);
+       }
+
+####IF TERNÁRIO
+*Podemos também fazer uma verificação em uma única linha usando o “if” ternário:
+*Ex.: [condição] ? [instrução1] : [instrução2];
+   jogador1 > 0 ? console.log(‘marcou ponto’) : console.log(‘não marcou ponto”);
+
+// lembre de usar a interrogação “?” e dois pontos “:”
+
+####SWITCH CASE
+*O “switch/case” funciona como uma estrutura condicional também;
+*Ex.:  switch (${expressao}) {
+         case 1:
+         ${instrucao};
+         break;
+         case 2:
+         ${instrução};
+         break;
+      }
+
+####Laços de repetição
+*São estruturas condicionais que repetem uma instrução até atingir determinada condição:
+*For;
+*For/in;
+*For/of;
+*While;
+*Do/while;
+
+####FOR
+*Funciona como uma repetição de instrução até que a condição seja falsa:
+    for ([expressaoInicial]; [condicao]; [incremento]) {
+         declaracao 
+    }
+*Ex.:  var array = [‘valor1’, ‘valor2’, ‘valor3’, ‘valor4’]
+          for (let i = 0; i < array.length; i++) {
+             console.log(i);
+          }
+
+####FOR / IN	
+*Funciona como uma repetição a partir de uma propriedade:
+   for ([indice] in [objeto ou array]) { declaracao }
+*Ex.: var array = [‘valor1’, ‘valor2’, ‘valor3’, ‘valor4’]
+         for (i in array) {
+             console.log(i);
+         }
+
+####FOR / OF
+*O For/of não funciona com objetos pois as propriedades variam, diferentes do índice em um array que sempre serão números inteiros.
+*Mas e se eu quiser pegar o valor mesmo assim?
+*Ex.: for (i of object.propriedade) {
+         console.log(i);
+      }
+   // porém cada caractere dentro do valor será Impresso em linhas separadas.
+
+####WHILE
+*Executa uma instrução “enquanto” determinada condição for verdadeira, a verificação é feita antes da execução;
+*Ex.:    var a = 0;
+         while (a < 10) {
+               a++;
+               console.log(a);
+         }
+// como ler: enquanto a variável a for menor que 10 ela vai receber mais um e imprimir no console.
+
+####DO / WHILE
+*Executa uma instrução “até que” determinada condição seja falsa, a verificação é feita depois da execução;
+*Ex.:   var a = 0;
+        do {
+          a++;
+          console.log(a);
+        } while (a < 10)
+
+// como ler: a variável a vai receber mais um e imprimir no console até que seu valor chegue a 10

@@ -58,3 +58,6 @@ returnEvenValues(array);
 ####DOM
 *document object model
 *estrutura de elementos dentro da janela
+
+####criar um contador
+*
