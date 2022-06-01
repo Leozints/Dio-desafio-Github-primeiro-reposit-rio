@@ -1,0 +1,42 @@
+####operadores
+*atribuição
+*aritimética
+*comparação
+*lógica
+*condicional
+
+####atribuição
+* = (x = y, diz que x tem valor y atribuido)
+* += (x += y --> x = x + y)
+* *= (x *= y --> x = x * y)
+* /= (x /= y --> x = x / y)
+* %= (x %= y --> x = x % y)
+
+####aritimética
+* + --> adição
+* - --> subtração
+* * --> multiplicação
+* ** --> exponenciação
+* / --> divisão
+* % --> módulo
+* ++ --> incrementar
+* -- --> decrementar
+
+####comparação
+* == --> igual a
+* === --> mesmo valor emesmo tipo
+* != --> diferente
+* !== --> valor e tipos diferentes
+* > --> maior que
+* < --> menor que
+* >= --> maior ou igual
+* <= --> menor ou igual
+
+####lógica
+* && --> "e" lógico
+* || --> "ou" lógico
+* ! --> "não"lógico
+
+####condicional
+*if ternário
+*(condição) ? expressão1 ; expressão2
