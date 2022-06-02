@@ -1,0 +1,58 @@
+####Atribuição de valores
+*original variable as string --> some awesome var
+*camel case --> someAwesomeVar
+*snake case --> some_awesome_var
+*kebab case --> some-awesome-var
+*pascal case --> SomeAsesomeVar
+*upper case snake case --> SOME_AWESOME_VAR (usado para constantes)
+
+####VAR E LET
+*var usado para escopo global (como se fosse o id, se usar outro var o var inicial é esquecido e vira o proximo ex var a = 1 if (a===1) { var a = 20} //o var vira 20 pra sempre ou ate mudança futura}
+*let usado para escopos dentro de blocos (ifs) um let usado dentro de um bloco deixa de existir assim que sai do bloco 
+*var e let tem escopos diferentes
+*hoisting é atribuir um valor a uma variável sem antes declará-la (ocorre apenas com o var)
+*redeclaração só ocorre com o var
+*reatribuir é o nome da sua variavel reatribuindo novo valor (var e let)
+*todos usando o camelCase como padrão
+*comum arquivos usando apenas let
+
+####CONST (CONSTANTE)
+*declaradas em SNAKE_UPPER_CASE
+*escopo de bloco
+*não faz hoisting
+*nao pode reatribuir de forma alguma, nem redeclarar
+
+####TABELA VAR LET E CONST
+|            |       var       | const |  let  |
+|   escopo   | global ou local | bloco | bloco |
+| redeclarar |       sim       |  não  |  não  |
+| reatribuir |       sim       |  não  |  sim  |
+|  hoisting  |       sim       |  não  |  não  |
+
+####ESTRUTURAS DE DADOS
+*JavaScript é uma linguagem de tipagem dinâmica
+*ou seja, antes de declarar o valor não precisa especificar o tipo dele
+*pode modificar o tipo de uma variável
+*divididos em dois grandes grupos: dados primitivos e dados compostos
+*dados primitivos: numeros, strings, boolean, null e undefined
+*dados compostos: objetos, arrays
+
+####STRINGS
+*são textos, frases ou algo que queria trabalhar como se fosse um texto
+*valores declarados entre aspas ou crases (crase --> `nome completo ${primeiroNome} ${segundoNome})
+*CONCAT --> colocado para concatenar duas strings ex --> let concatenado = nome.concat(sobrenome) fica JoãoPedro
+*LENGTH --> coloca para contar o tamanho da string ou algo que quiser contar, como uma lista etc ex --> concatenado.length fica 9 (contagem de tamanho de JoãoPedro)
+*quando as strings são objetos --> let exemplo = new String("blablabla")
+*valor vazio --> let vazio = ""
+*indice é o indice de qualquer lista do javascript por exemplo um nome João seus indices serao 0 1 2 3 (0=J 1=o 2=ã 3=o) exemplo 2 nome{1}
+*se quiser colocar um espaço no concatenado é só reatribuir a variavel concatenado um espaço --> concatenado = nome + " " + sobrenome
+*pular linhas --> /n
+*pular linha sem /n e adicionar espaço sem reatribuir --> `${nome} ${sobrenome}` ou pulando linha `${nome} 
+                                                                                                   ${sobrenome}`
+*como printar aspas " --> let exemplo = "/""
+*pegar os argumentos da sua string --> let exemplo = "olá, tudo bem?" (split total) exemplo.split("") = ["o", "l", "á", ",", "t", "u", "d", "o", "b", "e", "m", "?"] 
+                                                                      (split espaços) exemplo.split(" ") = ["olá,", "tudo", "bem?"]
+*ver se existe uma palavra no string --> exemplo.includes("palavra") se tiver palavra na frase escolhida voltara true, se não false
+*ver se a string começa com uma tal letra -> exemplo.startWith("o") se a string começar com "o" tera resultado true, se não false
+*ver se a string termina com uma tal letra -> exemplo.endsWith("o") se a string terminar com "o" tera resultado true, se não false
+*mudar um elemento da string --> exemplo.replace(",", "!") mudará a "," por um "!"
