@@ -56,3 +56,46 @@
 *ver se a string começa com uma tal letra -> exemplo.startWith("o") se a string começar com "o" tera resultado true, se não false
 *ver se a string termina com uma tal letra -> exemplo.endsWith("o") se a string terminar com "o" tera resultado true, se não false
 *mudar um elemento da string --> exemplo.replace(",", "!") mudará a "," por um "!"
+
+####NUMBERS
+*números inteiros e decimais
+*math é uma função que já tem valores criado como PI, E, numero de ouro, etc
+*se precisar usar porcentagem, é necessário concatenar com uma string de %
+
+####BOOLEANS
+*tem apenas dois retornos: true ou false
+
+####ARRAYS
+*listas iteráveis de elementos
+          first index
+               ^
+               |
+             | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | --> indices
+             |   |   |   |   |   |   |   |   |   |   |    | --> element (at index 10)
+             <-------------array length is 10------------->
+*let array = []
+*adicionar um item dentro do meu array --> array.push(3) = [3]
+                                           array.push(2, 5, 7, 9) = [3, 2, 5, 7, 9]
+*retirar um item do final do array --> array.pop() = [3, 2, 5, 7]
+*retirar um item do inicio do array --> array.shift() = [2, 5, 7, 9]
+*adicionar um item no inicio do array --> array.unshift(1) = [1, 3, 2, 5, 7, 9]
+*pode-se crirar um looping para todos os elementos do array
+
+####OBJETOS
+*estrutura tipo "chave e valor" let obj = {}
+                                obj.name = "julia" --> obj = {name: "julia"}
+                                obj.age = 20 --> obj = {name: "julia", age: 20}
+*para saber as chaves e os valors dentro de um objeto = let obj = {name: "julia", age: 20}
+                                                        object.keys(obj) = ["name", "age"]
+                                                        object.values(obj) = ["julia", 20]
+*pode-se inicializar um object sem utilizar funções --> let person = {name: "julia", age: 20, adress: "rua 2"}
+*para saber o valor de uma chave dentro de um objeto --> person.name = "julia" ou person["name"] = "julia"
+*outra forma de se criar chaves --> person{"numberOfSiblings"] = 3 person = {name: "julia", age: 20, adress: "rua 2" numberOfSiblings: 3}
+*para mandar uma variável dentro do objeto --> let mom = "nameOfMom" 
+                                               person[mom] = "maria" 
+                                               person = {name: "julia", age: 20, adress: "rua 2" numberOfSiblings: 3 nameOfMom: "maria"}
+
+####EMPTY, NULL E UNDEFINED
+*empty voce declarou aquela variável, se numero (0), se string (""), se array"([]) e se object ({}), iniciando com um valor "vazio"
+*null qunado ele nao existe, de propósito --> let exemplo = null (é um objeto)
+*undefined o valor nao existe --> variável (a variável nao foi definica anteriormente)
