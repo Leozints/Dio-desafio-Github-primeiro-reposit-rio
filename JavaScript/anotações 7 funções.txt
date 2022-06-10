@@ -50,3 +50,68 @@
                                                                       
                                                                       console.log(reultSub);
                                                                       console.log(resultSoma);
+
+####valores padrão
+*atualizações para diminuir código
+
+####arguments
+*um array com todos os parâmetros passados quando a função foi invocada
+*exemplo --> function findMax() {
+               let max = -Infinity;
+
+               for(let i = 0; i< arguments.length; i++) {
+                   if (arguments[i] > max) {
+                       max = arguments[i];
+                   }
+               }
+               return max;
+             }
+*ele vai retornar todos os valores que forem passados, porém nao foi preciso especificar a quantidade de parâmetros
+
+####arrays
+
+####SPREAD
+*uma forma de lidar separadamente com elementos de um array (spread)
+*o que era parte de um array se torna um elemento independente
+*exemplo --> function sum(x, u, z){ 
+               return x + y + z;
+             }
+  
+             cont numbers= [1, 2, 3];
+
+             console.log(sum(...numbers));
+*o spread é os "..." antes do parâmetro
+*se mandar apenas number será um array e valerá só como x, caso usar o spread, 1 = x 2 = y z = 3
+
+####REST
+*combina os argumentos em um array
+*o que era um elemento independente se torna parte de um array
+*exemplo --> function confereTamanho(...args) {
+               console.log(args.length)
+             }
+
+             confereTamanho() //tamanho zero
+             confeteTamanho(1, 2) //tamamnho2
+             contefeTamanho(3, 4, 5) //tamanho3
+
+####OBJECT DESTRUCTURING
+*entre chaves {} podemos filtrar apenas os dados que nos interessam em um objeto
+*exemplo --> const user = {
+                id: 42,
+                displayName:'jdoe',
+                fullName: {
+                  firstName: 'John',
+                  lastName: 'Doe'
+                }
+             };
+
+             function userId({id})c{
+                return id;
+             }
+             function getFullName({fullName: {firstName: first, lastName: last}}) {
+                return `${first} ${last}`;
+             }
+             userId(user)
+             // 41
+             getFullName(user)
+             // John Doe
