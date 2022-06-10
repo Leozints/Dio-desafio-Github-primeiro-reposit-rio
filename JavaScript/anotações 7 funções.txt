@@ -115,3 +115,151 @@
              // 41
              getFullName(user)
              // John Doe
+
+####IF / ELSE
+*if é a condição por exemplo -->function numeroPositivo(num) {
+                                  let resultado;
+
+                                  if (num < 0) (se o número for menor que zero)
+*dentro do if dica a declaração 1 por exemplo --> resultado = false (se o numero for menor que zero o resultado é false --> numeroPositivo(2) false
+*else é a declaração 2, se a condição um não for satisfeita else é chamado e tido como resultado --> else {
+                                                                                                      resultado = true
+
+####SWITCH CASE
+*equivale a uma comparação de tipo e valor (===)
+*sempre precisa de um valor "default"
+*ideal para quando se precisa comparar muitos valores
+*exemplo -->function getAnimal(id) {
+              switch(id){
+                case 1:
+                  return "cão";
+                case 2:
+                  return "gato";
+                case 3:
+                  return "pássaro";
+                default:
+                  return "peixe";
+              }
+            }
+
+####FOR
+*loop dentro de elementos iteráveis (arrays, strings)
+*exemplo --> function multiplicaPorDois(arr) {
+               let multiplicados = [];
+               
+               for(let i = 0 i < arr.length; i++) {
+                  multiplicados.push(arr[i] * 2);
+               }
+             
+              return multiplicados;
+             }
+
+             conts meusNumeros = [2, 33, 456, 356, 40]
+             multiplicaPorDois(meusNumeros);
+
+####FOR...IN
+*loop entre propriedades enumeráveis de um objeto
+*exemplo --> function forInExemplo(obj) {
+               for(prop in obj) {
+                 console.log(prop);
+               }
+             }
+             
+             const meuObjeto = {
+               nome:"joão",
+               idade:"20",
+               cidade: "salvador"
+             }
+
+             forInExemplo(meuObjeto);
+             //nome
+             //idade
+             //cidade
+
+*exemplo 2 com o for...in --> 
+             function forInExemplo(obj) {
+               for(prop in obj) {
+                 console.log(obj[prop]);
+               }
+             }
+             
+             const meuObjeto = {
+               nome:"joão",
+               idade:"20",
+               cidade: "salvador"
+             }
+
+             forInExemplo(meuObjeto);
+             //joão
+             //20
+             //salvador
+
+####FOR...OF
+*loop entre estruturas interáveis(arrays, strings)
+*exemplo 1 -->
+             function logLetras(palavra) {
+               for(letra of palavra) {
+                 console.log(letra);
+               }
+             }
+             
+             const palavra = "abacaxi";
+
+             logLetras(palavra);
+             //a
+             //b
+             //a
+             //c
+             //a
+             //x
+             //i
+*exemplo 2 -->
+             function logNumeros(nums) {
+               for(num of nums) {
+                 console.log(num);
+               }
+             }
+             
+             const nums = [30, 20, 233, 2];
+
+             logNumeros(nums);
+             //30
+             //20
+             //233
+             //2
+
+####WHILE
+*executa instruções até que a condição se torne falsa
+*exemplo -->
+function exemploWhile() {
+  let num = 0;
+
+  while(num <= 5) {
+    console.log(num);
+    num++
+  }
+}
+
+exemploWhile()
+//0
+//1
+//2
+//3
+//4
+//5
+
+####DO...WHILE
+*executa instruções até que a condição se torne falsa
+*porém a primeira execução sempre ocorre
+*exemplo -->
+function exemploDoWhile() {
+  let num = 6;
+  
+  do {
+    console.log(num);
+    num++
+  } while(num <= 5)
+}
+
+exemploDoWhile()
+//6
