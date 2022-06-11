@@ -263,3 +263,31 @@ function exemploDoWhile() {
 
 exemploDoWhile()
 //6
+
+####THIS
+*a palavrra reservada this é uma referência de contexto
+*no exemplo, this refere-se ao objeto pessoa
+*exemplo -->
+const pessoa = {
+  firstName: "Leonardo",
+  lastName: "Toledo",
+  id: 1,
+  fullName: function() {
+    return this.firstName+ " " + this.lastName;
+  },
+  getId: function() {
+    return this.id;
+  }
+};
+
+pessoa.fullName();
+//Leonardo Toledo
+
+pessoa.getId();
+//1
+*seu valor pode mudar de acordo com o lugar no código onde foi chamada
+|       contexto       |              referência                |
+| em um objeto(método) |      próprio objeto dono do método     |
+|       sozinha        | objeto global (em navegadores, window) |
+|        função        |             objeto global              |
+|        evento        |      elemento que recebeu o evento     |
