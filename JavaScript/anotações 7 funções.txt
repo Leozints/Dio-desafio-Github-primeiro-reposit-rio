@@ -291,3 +291,79 @@ pessoa.getId();
 |       sozinha        | objeto global (em navegadores, window) |
 |        função        |             objeto global              |
 |        evento        |      elemento que recebeu o evento     |
+
+####CALL
+*const pessoa = {
+  nome: 'miguel',
+ };
+
+ constanimal = {
+  nome: 'murphy',
+ };
+
+ function getSomething() {
+  console.log(this.nome);
+ }
+
+ getSomething.call(pessoa) //miguel
+ getSomething.call(animal) //murphy
+
+*é possível passar parâmetros para essa função separando-os por vírgulas
+*const myObj = {
+   num1: 2,
+   num2: 4,
+ };
+
+ functionsoma(a, b) {
+   console.log(this.num1+ this.num2 + a + b);
+ }
+
+ soma.call(myObj, 1, 5);
+
+####APPLY
+*funciona como o call
+*const pessoa = {
+  nome: 'miguel',
+ };
+
+ constanimal = {
+  nome: 'murphy',
+ };
+
+ function getSomething() {
+  console.log(this.nome);
+ }
+
+ getSomething.apply(pessoa) //miguel
+*é possível passar parâmetros para essa função dentro de um array
+*const myObj = {
+   num1: 2,
+   num2: 4,
+ };
+
+ functionsoma(a, b) {
+   console.log(this.num1+ this.num2 + a + b);
+ }
+
+ soma.call(myObj, [1, 5]);
+
+####BIND
+*clona a estrutura da função onde é chamada e aplica o valor do objeto assado como parâmetro
+*const retornaNomes = function() {
+   return this.nome;
+ };
+
+ let bruno = retornaNomes.bind({ nome: 'bruno' });
+
+bruno(); //bruno
+
+####ARROW FUNCTIONS
+*sintaxe conts helloWorld= () => "hello World";
+*caso exista apenas uma linha, pode dispensar as cahves e o return --> const soma = (a, b) => a + b;
+                                                                       soma(4, 6); //10
+*caso exista apenas um parâmetro, pode dispensar os parênteses --> const soma= a => a;
+                                                                   soma(4); //4
+*arrow function nao faz hoisting --> tem que declarar a função antes de chamar a função
+*"this"sempre será o objeto global. métodos para modificar seu valor não irão funcionar
+*não existe o objeto "arguments"
+*o construtor (ex: new Meuobjeto()) também não pode ser utilizado
