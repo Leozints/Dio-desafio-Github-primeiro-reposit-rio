@@ -1,0 +1,62 @@
+####paradigmas
+*os programas são objetos que possuem uma série de propriedades
+*pilares --> herança, polimorfismo, encapsulamento, abstração
+
+####pilares
+*abstração --> "processo mental que consiste em isolar um aspecto determinado de um estado de coisas relativamente complexo, a fim de simplificar a sua avaliação, classificação ou para permitir a comunicação do mesmo"
+*cada vez tornar ele mais simples
+*herança --> o objeto filho herda propriedades e métodos do objeto pai, porém tem suas próprias características
+*encapsulamento--> cada classe tem propriedades e métodos independentes do restante do código
+*polimorfismo --> objetos podem herdar a mesma classe do pai, mas se comportam de formas diferentes quando invocamos seus métodos
+
+####OOJS
+*object oriented Javascript
+
+####protótipos
+*todos os objetos JavaScript herdam propriedades e métodos de um prototype(protótipo)
+*o objeto Object.prtotype está no topo desta cadeia
+*cadeia de protótipos (prototype chain) --> object.prototype=null
+               				          ^
+ 						  |
+					    f Object() {}
+					          ^
+						  |
+					    function.prototype.constructor
+						  ^
+						  |
+  					    f function
+						  ^
+  						  |
+					    f Animal.constructor
+						  ^
+						  |
+					    f Bird
+						  ^
+						  |
+					    f Crow
+
+####classes
+*syntatic sugar --> uma sintaxe feita para facilitar a escrita
+*var meal = function(food) {  		|
+   this.food = food			|
+ }					|
+					|    método antigo
+ meal.prototype.eat = function() {	|
+   return ': )'				|
+ }					|
+
+*class meal{				|
+   constructor (food) {			|
+      this.food = food			|
+   }					|
+					|    método novo
+   eat() {				|
+      return ': )'			|
+   }					|
+ }					|
+*JavaScript não possui classes nativamente 
+*todas as classes são objetos e a herança se dá por protótipos
+*construtor --> ele constrói a classe, e se passar parâmetros ele irá atribuir esses parâmetros a certos valores dentro dessa classe
+*getter e setter --> para ter acessos a propriedades dentro de objetos usamos get e set sendo o primeiro para retornar o tipo do animal e o 2 para determinar outro valor
+*super() --> ele manda pra cima (pra função pai) os parâmetros que estão lá, usado para utilizar as propriedades do construtor que existem na classe pai (herança)
+*método --> (makeSound() se eu quero que uma classe filha tenha um método diferente dentro desse método é possível sobrescrever

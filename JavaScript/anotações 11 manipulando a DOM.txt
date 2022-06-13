@@ -1,0 +1,76 @@
+####DOM
+*document object model
+*o dom html é um padrão de como acessar e modificar os elementos HTML de uma página
+*                         document
+    			      |
+			root element
+                            <html>
+			      |
+      ____________________________________________
+     |                                             |
+  element                                       element
+  <head>		                         body
+     |                                      _______|________ 
+  element                                  |                | 
+  <title>                 attribute ___ element          element
+     |			   "href"         <a>              <h1>
+   text                                    |                |
+ "my title"                              text             text
+                                       "My link"       "my header"
+*nós que representam cada elemento do HTML
+
+####DOM VS BOM
+*BOM --> browser object model
+*sempre ao abrir o browser ele tem a propriedade window
+*tudo o que esta dentro do objeto window faz parte do browzer object model, porém nâo faz parte do document object model
+*BOM(mãe) DOM(filho)
+
+####métodos
+*document.getElementById('título')
+*document.getElementsByTagName('li')
+*document.getElementsByClassName('textos')
+*document.querrySelectorAll('.primeira-classe .segunda-classe')
+*document.querrySelectorAll('li .opcao')
+*document.createElement(element) --> cria um novo elemento html
+*document.removeChild(element) --> remove um elemento
+*document.appendChild(element) --> adiciona um elemento dentro de outro
+*document.replaceChild(new, old) --> substitui um elemento existente por um novo
+
+####classes
+*conseguimos selecionar elementos que tenham essas classes através do css
+*element.classList
+*elementoExemplo.classlist.add("novo-estilo") --> adiciona a classe "meu estilo"
+*elementoExemplo.classlist.remove("classe") --> remove a classe "classe"
+*elementoExemplo.classlist.toggle("dark-mode") --> adiciona a classe "dark-mode" caso ela nao faça parte da lista e remove caso ela faça
+
+####CSS
+*acessando diretamente ocss de umelemento no JavaScript
+*exemplo --> document.getElementsByName("p").style.color = "blue";
+
+####eventos
+*qualque tipo de ação que o usuário faça numa página
+
+####tipos de eventos
+*eventos do mouse --> mouseover (quando dá foco) mouseout (quando sai do foco)
+*eventos de click --> click (click) dbclick (dois cliques)
+*eventos de atualização --> change (mudança) load (carregar)
+
+####event listener
+*diretamente no JavaScript, cria um evento que vai ser adicionado no momento em que o usuário realizar determinada ação
+*exemplo --> const botao = document.getElementById("meuBotao");
+	     
+	     botao.addEventListener("click", outrFuncao);
+*também é possível executar a função a ser chamada diretamente no elemento html
+*exemplo --> 	<html>
+		<body>
+		
+		<h1 onclick="mudaTexto(this)">clique aqui!<h1>
+		
+		<script>
+			functionmudaTexto(id) {
+				id.innerHTML ="mudei!";
+			}
+		<script>
+
+		<body>
+		<html>
