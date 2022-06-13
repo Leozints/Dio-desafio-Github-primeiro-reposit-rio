@@ -1,0 +1,84 @@
+####JavaScript assíncrono
+
+####definição
+*assíncrono é aquilo que não ocorre ou não se efetiva ao mesmo tempo
+*o JavaScript roda de maneira síncrona, inicia um processo, após acabar inicia outro
+
+####promises
+*objeto de processamento assíncrono
+*inicialmente, seu valor é desconhecido. Ela pode, então, ser resovida ou rejeitada
+         --> .then() |
+*promise |           -->promise (pending)
+         --> .catch()|
+*3 estados{ pending
+            fulfilled
+            rejected
+*estrutura --> const myPromise = new Promise((resolve, reject)=> {
+                   window.setTimeout(() => {
+                       resolve('resolvida');
+                   }, 2000);
+               });
+
+               console.log(myPromise) //após 2 segundos recebera uma promise de resolvida
+*pode-se encadear algumas chamadas --> const myPromise = new Promise((resolve, reject)=> {
+                                          window.setTimeout(() => {
+                                              resolve('resolvida');
+                                          }, 2000);
+                                       });
+                                       
+                                       await myPromise
+                                                .then((result) => result + ' passando pelo then')
+                                                .then((result) => result + ' e agora acabou!')
+                                                .catch((err) => console.log(err.message));
+                                                //após 2 segundos, retornaráo valor
+                                                //"resolvida passando pelo then e agora acabou!"
+
+####async/await
+*async existe para definir funções assíncronas --> async function resolvePromise() {
+                                                     const myPromise = new Promise((resolve, reject)=> {
+                                                       window.setTimeout(() => {
+                                                           resolve('resolvida');
+                                                       }, 3000);
+                                                     });
+                                                                                                      
+                                                     const resolved = await myPromise
+                                                         .then((result) => result + ' passando pelo then')
+                                                         .then((result) => result + ' e agora acabou!')
+                                                         .catch((err) => console.log(err.message));
+                                                         
+                                                     return resolved
+                                                   };
+                                                   
+                                                   await resolvePromise()
+                                                         //após 3 segundos, retornaráo valor
+                                                         //"resolvida passando pelo then e agora acabou!"
+
+####consumindo APIs
+*APIs--> application programming interface
+*uma api é uma forma de intermediar os resultados do back-end com o que é apresentado no front-end
+*você consegue acessá-la por meio de URLs
+*JSON --> JavaScript Object Notation
+*é muito comum que APIs retornem seus dados no formato .json, portanto precisamos tratar esses dados quando recebermos
+
+####fetch
+*fetch(url, opitions)
+   .then(response=> response.json())
+   .then(json+ console.log(json)) //retorna uma promise
+*precisa usar o await por ser uma promise
+*sempre converter uma resposta para json caso venha string para poder ser utilizada dentro do javascript
+*fetch('https://endereco-api,com/', {
+   method: 'GET',
+   cache: 'no-cache',
+
+ })
+   then(response => response.json())
+   then(json => console.log(json)) //retorna uma promisse
+
+*fetch('https://endereco-api,com/', {
+   method: 'POST',
+   cache: 'no-cache',
+   body: JSON.stringify(data)
+
+ })
+   then(response => response.json()) 
+   then(json => console.log(json)) //retorna uma promise

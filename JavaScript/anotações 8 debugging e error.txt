@@ -1,0 +1,89 @@
+####ECMAScript error
+*erros que ocorrem em tempo de execução
+*composto por --> mensagem, nome, linha, call stack
+*você esqueceu algo, falta de ponto e virgula, falta de variável
+
+####DOMException 
+*erros relacionados ao documento objecto model (dom)
+*uma página esta consumindo dados
+*tem um caracter invalido
+*um elemento num local inválido
+
+####throw
+*método para demonstrar um comportamento de erro no seu programa
+*function verificaPalindromo(string) {
+  if (!string) return "string inválida";
+  
+  return string === string.split('').reserve().join('');
+ }
+ 
+ verificaPalindromo('cat') //"string inválida"
+
+*com o throw
+ function verificaPalindromo(string) {
+  if (!string) return "string inválida";
+  
+  return string === string.split('').reserve().join('');
+ }
+ 
+ verificaPalindromo('cat') //uncaught string inválida
+
+####try...cat
+*declaração que dentro do bloco try você verifica um pedaço de código e se esse pedaço tiver algum tipo de erro ele vai ser tratado (capturado) na função catch, podendno manipular dentro do cat esse erro da maneira que preferir
+*function verificaPalindromo(string) {
+  if (!string) thwrow "stringinválida";
+
+  return string ===
+ string.split('').reverse().join('');
+ }
+
+ function tryCathExemplo(string) {
+  try {
+   verificaPalindromo(string)
+  }
+  catch(e) {
+   console.log(e)
+  }
+ }
+ 
+ tryCatchExemplo(''); //string inválida
+
+####finally
+*um complemento pro try catch, é uma função chamada mesmo se nao ouver erros
+*function verificaPalindromo(string) {
+  if (!string) thwrow "stringinválida";
+
+  return string ===
+ string.split('').reverse().join('');
+ }
+
+ function tryCathExemplo(string) {
+  try {
+   verificaPalindromo(string)
+  }
+  catch(e) {
+   throw(e)
+  }
+  finally {
+   console.log('a string enviada foi: ' + string);
+ }
+ 
+ tryCatchExemplo(''); //a string enviada foi: 
+                        uncaught string inválida
+ tryCatchExemplo('ala'); //a string enviada foi: ala
+                           true
+
+####objeto error
+*sintaxe --> new Error(message, fileName, lineNumber)
+ 
+             const MeuErro = new Error('mensagem inválida')
+
+             throw MeuErro; //uncaught error: mensagem inválida
+*cont MeuErro = new Error('mensagem inválida');
+ MeuErro.name = 'InvalidMessage';
+
+ throw MeuErro; //uncaught InvalidMessage: mensagem inválida
+*MeuErro.name --> "invalidMessage"
+*MeuErro.stack --> mensagem inválida\n    at<anonymous>:3:17
+*MeuErro --> InvalidMessage: mensagem inválida
+                 at<anonymous>:3:17
