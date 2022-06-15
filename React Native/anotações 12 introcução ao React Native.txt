@@ -1,0 +1,96 @@
+####o que é o RN
+*é um framework
+*traz toda uma bagagem e possibilita o desenvolvimento de determinada aplicação
+*teve origem pelo facebook em 2015
+
+####o que é o cross plattform
+*é usar apenas um códico para ser usado em várias plataformas
+
+####vantagens 
+*desenvolvimento rápido
+*seguro, muito tempo no mercado
+*vagas
+
+####história e conceitos
+*o react native é um framework baseado na bliblioteca react
+*desenvolvido pela equipe do facebook, que possibilita o desenvolvimento de aplicações mobile, tanto para Android, como para IOS, utilizando apenas JavaScript
+*cost App = (
+	return <Text></Text> ------> react native -------> ios, android
+ )
+ export default App;
+
+####components
+*alguns conponentes
+*<View>
+*<Text>
+*<image>
+*<ScrollView>
+
+####extrutura
+*import react from 'react'
+ import {Viel, Text} from 'react-native';
+
+ const App = () => {
+	return (
+		<View>
+			<Text>hello dio!</Text>
+		</View>
+	);
+ };
+
+ export default App;
+
+####características do react native
+*possui a base de conhecimento compartilhada entre o desenvolvimento mobile e front end
+*todo código desenvolvido é convertido para a linguagem natica do sistema operacional
+*conseguimos desenvolver aplicações para android e IOS utilizando um único código
+*por ser multiplataforma, podemos desenvolver aplicações utilizando qualquer sistema operacional (windows, macOs ou Linux)
+*acessara interface e os recursos nativos do android e IOS utilizando o JavaScript
+
+####JSX
+*misturaentre html e javascript
+
+####ECMAScript
+*é nada mais que o nome oficial do JavaScript
+*atualmente, padrões e normativas referentes à linguagem é mantida pela ECMA-262, grupo criado na ECMA para a padronização do JavaScript e conta com participação de grandes empresas de tecnologia como microsoft, google
+
+####ARROW FUNCTIONS
+*const soma = (n1, n2) => {
+	return n1 + n2
+ }
+*const soma = (n1, n2) => n1 + n2
+
+####destructuring assignment
+*const cliente= {
+	nome: 'paulo'
+	idade:23
+	cidade: 'caçapava'
+ }
+
+const {nome, cidade} = cliente
+
+console.log(nome, cidade)
+
+####móduloscommonjs vs import
+*export function foo(){ return 'bar';}
+ export const baz = 123
+
+####flexbox
+*o flexbox foi projetado para fornecer um layout consistente em diversos tamanhos de tela
+*assim como temos na web no react native funciona da mesma forma
+*ao se utilizar o flexbox, é preciso ter em mente que todas as operações realizadas relacionam-se a dois eixos: o eixo principal(main axis) e o eixo transversal(cross axis)
+*o eixo princi´al é definido através da propriedade flex-direction e o eixo transversal encontrase na direção perpendicular a ele
+*a propriedade flex-direction define a direção do eixo principal e pode ter quatro valores possíveis --> row, row-reverse, column, column-reverse
+*se o valor escolhido for row (linha) ou row-reverse(linha inversa)se o , seu eixo principal se moverá ao longo da linha na direção inline
+*se o valor escolhido for column(coluna) ou column-reverse(coluna reversa)o eixo principal se moverá do topo até o fim da página, na direção block
+*podemos utilizar proporções com a propriedade flex para ocuparmos o tamanho conforme o peso estabelecido para cada objeto(container)
+
+####componentes e propriedades
+*componentes permitem você dividir a UI em partes independentes, reutilisáveis, ou seja, trata cada parte da aplicação como um bloco isolado, livre de outras dependências externa
+*propriedades são como funções JavaScript
+*eles aceitam entrada arbitraria (chamadas "props") e retornam elementos que deve aparecer na tela
+
+###estados
+*diferente das propriedades, o estado não é repassado ao componete e sim configurado dentro dele
+*pense no estado como as propriedades de nossa classeque devem ser armazenadas para renderizarmos o componente da forma correta
+*
